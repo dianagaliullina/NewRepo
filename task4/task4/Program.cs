@@ -22,7 +22,7 @@ namespace task4
 
         static double MyFunction(double x) 
         {
-            //throw new NotImplementedException();
+            // throw new NotImplementedException();
             return (x * x + 10) / Math.Sqrt(x * x + 1);
 
         }
