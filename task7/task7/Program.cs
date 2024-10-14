@@ -10,7 +10,7 @@ namespace task7
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите текст на русском языке: ");
+            Console.WriteLine("Введите текст на русском языке:");
             var text = Console.ReadLine();
             Console.WriteLine(Translate(text));
 
