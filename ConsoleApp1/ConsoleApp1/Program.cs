@@ -10,7 +10,7 @@ namespace task8
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите значение аргумента функции");
+            Console.WriteLine("Введите значение аргумента функции:");
             var x = double.Parse(Console.ReadLine());
 
             Console.WriteLine($"f({x}) = {MyFunction(x)}");
