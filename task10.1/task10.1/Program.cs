@@ -26,7 +26,7 @@ namespace task10_1
             }
 
             Console.WriteLine(table.ToString());
-            Console.ReadKey();
+            Console.ReadKey(); 
         }
     }
 }
