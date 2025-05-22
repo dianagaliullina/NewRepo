@@ -1,8 +1,7 @@
 using NUnit.Framework;
-using CommodityLibrary;
 using Commodity;
 
-namespace CommodityLibrary.UnitTests
+namespace Commodity.UnitTests
 {
     [TestFixture]
     public class CommodityUnitTests
