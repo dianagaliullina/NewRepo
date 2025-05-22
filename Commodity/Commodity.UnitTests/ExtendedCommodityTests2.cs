@@ -8,7 +8,7 @@ using NUnit.Framework;
 namespace Commodity.UnitTests
 {
     [TestFixture]
-    public class ExtendedCommodityTests
+    public class ExtendedCommodityTests2
     {
         private CommodityRealization _commodity1;
         private CommodityRealization _commodity2;
