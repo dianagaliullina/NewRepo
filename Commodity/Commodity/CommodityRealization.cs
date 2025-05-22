@@ -6,9 +6,15 @@ using System.Threading.Tasks;
 
 namespace Commodity
 {
-    public class CommodityRealization
+    public class CommodityRealization : IComparable<CommodityRealization>
     {
-        public readonly string Article;
+        public int CompareTo(CommodityRealization other)
+        {
+            if (other == null) return 1;
+            return string.Compare(Article, other.Article, StringComparison.Ordinal);
+        }
+
+    public readonly string Article;
         public string Name { get; set; }
         public decimal WholesalePrice { get; private set; }
         public decimal RetailPrice { get; private set; }

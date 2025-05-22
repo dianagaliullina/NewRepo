@@ -31,7 +31,7 @@ namespace Commodity.UnitTests
             Assert.That(info.Length, Is.EqualTo(3));
             Assert.That(info[0], Is.EqualTo("Артикул: A001. Наименование: Сахар"));
             Assert.That(info[1], Is.EqualTo($"Цены: оптовая - {50.5m:C}, розничная - {60.0m:C}"));
-            Assert.That(info[2], Is.EqualTo("Наличие на складах: 120 кг. Описание: Белый сахар в мешках"));
+            Assert.That(info[2], Is.EqualTo("Наличие на складе: 120 кг. Описание: Белый сахар в мешках"));
         }
 
 
