@@ -1,4 +1,4 @@
-using NUnit.Framework;
+п»їusing NUnit.Framework;
 using Commodity;
 using System;
 
@@ -13,7 +13,7 @@ namespace Commodity.UnitTests
             var item = CreateTestCommodity();
 
             Assert.That(item.Article, Is.EqualTo("A001"));
-            Assert.That(item.Name, Is.EqualTo("Сахар"));
+            Assert.That(item.Name, Is.EqualTo("РЎР°С…Р°СЂ"));
             Assert.That(item.WholesalePrice, Is.EqualTo(50.5m));
             Assert.That(item.RetailPrice, Is.EqualTo(60.0m));
             Assert.That(item.Unit, Is.EqualTo(CommodityUnit.Kilograms));
@@ -23,21 +23,21 @@ namespace Commodity.UnitTests
         public void GetInfoTest()
         {
             var item = CreateTestCommodity();
-            item.Description = "Белый сахар в мешках";
+            item.Description = "Р‘РµР»С‹Р№ СЃР°С…Р°СЂ РІ РјРµС€РєР°С…";
             item.StockQuantity = 120;
 
             var info = item.GetInfo();
 
             Assert.That(info.Length, Is.EqualTo(3));
-            Assert.That(info[0], Is.EqualTo("Артикул: A001. Наименование: Сахар"));
-            Assert.That(info[1], Is.EqualTo($"Цены: оптовая - {50.5m:C}, розничная - {60.0m:C}"));
-            Assert.That(info[2], Is.EqualTo("Наличие на складе: 120 кг. Описание: Белый сахар в мешках"));
+            Assert.That(info[0], Is.EqualTo("РђСЂС‚РёРєСѓР»: A001. РќР°РёРјРµРЅРѕРІР°РЅРёРµ: РЎР°С…Р°СЂ"));
+            Assert.That(info[1], Is.EqualTo($"Р¦РµРЅС‹: РѕРїС‚РѕРІР°СЏ - {50.5m:C}, СЂРѕР·РЅРёС‡РЅР°СЏ - {60.0m:C}"));
+            Assert.That(info[2], Is.EqualTo("РќР°Р»РёС‡РёРµ РЅР° СЃРєР»Р°РґР°С…: 120 РєРі. РћРїРёСЃР°РЅРёРµ: Р‘РµР»С‹Р№ СЃР°С…Р°СЂ РІ РјРµС€РєР°С…"));
         }
 
 
         private CommodityRealization CreateTestCommodity()
         {
-            return new CommodityRealization("A001", "Сахар", 50.5m, 60.0m, CommodityUnit.Kilograms);
+            return new CommodityRealization("A001", "РЎР°С…Р°СЂ", 50.5m, 60.0m, CommodityUnit.Kilograms);
         }
     }
 }
