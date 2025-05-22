@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BulkyCommodity.cs" />
+    <Compile Include="FragileCommodity.cs" />
+    <Compile Include="PerishableCommodity.cs" />
     <Compile Include="CommodityRealization.cs" />
     <Compile Include="CommodityUnit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
