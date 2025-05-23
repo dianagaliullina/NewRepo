@@ -20,7 +20,7 @@ namespace Commodity.UnitTests
         }
 
         [Test]
-        public void GetInfoTest()
+        public void GetInfoTest() 
         {
             var item = CreateTestCommodity();
             item.Description = "Белый сахар в мешках";
